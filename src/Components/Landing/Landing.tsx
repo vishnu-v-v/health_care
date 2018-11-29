@@ -1,4 +1,5 @@
 import * as React from "react";
+import SimpleSlider from "../Slider";
 
 import "./landing.css";
 
@@ -31,6 +32,15 @@ const Landing = () => (
               </FormGroup>{' '}
               <Button type="submit">Login</Button>
             </Form>
+          </Col>
+        </Row>
+      </Grid>
+    </Jumbotron>
+    <Jumbotron>
+      <Grid>
+        <Row className="show-grid">
+          <Col xs={4} xsOffset={4}>
+            <SimpleSlider/>
           </Col>
         </Row>
       </Grid>
