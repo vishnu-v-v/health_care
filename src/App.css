@@ -1,34 +1,76 @@
-@import "~slick-carousel/slick/slick.css";
-@import "~slick-carousel/slick/slick-theme.css";
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  @import "~slick-carousel/slick/slick.css";
+  @import "~slick-carousel/slick/slick-theme.css";
+  .App {
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+  
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
   }
-}
+  
+  .App-header {
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
+  }
+  
+  .App-title {
+    font-size: 1.5em;
+  }
+  
+  .App-intro {
+    font-size: large;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .slick-prev {
+    left: 100px;
+    top: 250px;
+    z-index: 1000;
+  }
+  
+  .slick-next {
+    right: 100px;
+    top: 250px;
+    z-index: 1000;
+  }
+  
+  .slick-slide img {
+    display: block;
+    width: 100%;
+  }
+  
+  .slick-prev:before,
+  .slick-next:before {
+    font-size: 30px;
+    color: #1477D7;
+  }
+  
+  .slick-dots li button:before {
+    border-radius: 50%;
+    border-width: 2px;
+    border-color: #1477D7;
+    background: #1477D7;
+    color: #1477D7;
+    padding: .25rem;
+    cursor: pointer;
+  }
+  
+  .slick-active li button:before {
+    color: #1477D7;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: transparent;
+  }
